@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modupe's Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .tab-info {
+        display: none;
+      }
+      .active-tab {
+        display: block;
+      }
+      .tab-links {
+        text-decoration: none;
+        color: inherit;
+      }
+      .active-link {
+        font-weight: bold;
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="header">
+      <div class="navbar">
+        <nav>
+          <img src="images/logo.png" class="sideimage" />
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+              <a href="Modupe_updated_NSBEresume_2025 copy.pdf" target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <i class="bx bx-menu"></i>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <div class="home-content">
+        <h3>Hello!</h3>
+        <h1>I'm Modupe 🙋🏾‍♀️</h1>
+        <h1 class="text-animation">
+          <span>a Computer Engineering student</span>
+        </h1>
+        <h1>at The University of Texas at San Antonio.</h1>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/modupe-awojuyigbe-9937a7295/"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://github.com/"><i class="bx bxl-github"></i></a>
+          <a href="mailto:awojuyigbemodupe@gmail.com"
+            ><i class="bx bx-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="images/profilepic.png" alt="Profile Picture" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-header">About Me</div>
+      <div class="about-content">
+        <p>
+          I am a <span>Computer Engineering student</span> passionate about
+          <span>technology, innovation, and inclusivity</span>. With my
+          experience in <span>hardware, software, and web development</span>, I
+          enjoy using my creativity to tackle complex problems and create
+          impactful solutions.
+        </p>
+        <p>
+          As a <span>Peer Educator and Makerspace Assistant</span>, I guide
+          students in STEM-related courses and provide guidance in soldering, 3D
+          printing, and fabrication. I have hands-on experience in
+          <span
+            >building and programming robotic systems, constructing digital
+            circuits, and developing interactive web applications.</span
+          >
+          My curiosity and desire push me to continuously learn, innovate, and
+          break the boundaries of technology. I'm also an advocate for
+          <span>women in STEM</span>, working to bridge the digital divide.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tab Titles Section -->
+    <div class="tab-titles">
+      <p class="tab-links active-link" onclick="opentab('skills', event)">
+        Skills
+      </p>
+      <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+      <p class="tab-links" onclick="opentab('involvement', event)">
+        Involvement
+      </p>
+    </div>
+
+    <div class="tab-info active-tab" id="skills">
+      <ul>
+        <li>
+          <span>Programming: </span>Python, C, C++, JavaScript, HTML, CSS,
+          React, MATLAB
+        </li>
+        <li><span>Web Development:</span> Frontend development</li>
+        <li>
+          <span>Hardware & Circuits: </span> Digital circuits, Breadboarding,
+          Soldering
+        </li>
+        <li><span>Microcontrollers: </span> TinkerCAD simulation, ICs</li>
+        <li><span>3D Printing & Fabrication: </span> Makerspace experience</li>
+        <li><span>Robotics: </span> Building and programming robot car</li>
+        <li>
+          <span>Others: </span> Communication, Critical Thinking, Problem
+          solving
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-info" id="experience">
+      <ul>
+        <li>
+          <span>August 2024 - Present: </span> Peer Educator at The University
+          of Texas at San Antonio
+        </li>
+        <li>
+          <span>May 2024 - August 2024: </span> Summer Resident Assistant at The
+          University of Texas at San Antonio
+        </li>
+        <li>
+          <span>February 2024 - August 2024: </span> Codepath Web Development
+          Program
+        </li>
+        <li>
+          <span>February 2023 - March 2023: </span> Associate Operations intern
+          at Carleton University
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-info" id="involvement">
+      <ul>
+        <li>
+          <span>January 2025 - Present: </span> Volunteer at Makerspace at The
+          University of Texas at San Antonio
+        </li>
+        <li>
+          <span>January 2025 - Present: </span> Secretary at UTSA EPICS Club
+        </li>
+        <li><span>January 2025 - Present: </span> Member of Colorstacks</li>
+        <li>
+          <span>September 2023 - Present: </span> Member of Society of Women
+          Engineers
+        </li>
+        <li>
+          <span>September 2023 - Present: </span> Member of National Society of
+          Black Engineers
+        </li>
+        <li>
+          <span>September 2023 - Present: </span> Member of Institute of
+          Electrical and Electronics Engineers
+        </li>
+        <li>
+          <span>September 2023 - Present: </span> Member of Rewriting the Code
+        </li>
+        <li>
+          <span>September 2023 - Present: </span> Member of Girls Who Code
+        </li>
+      </ul>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-grid">
+          <div class="projects">
+            <img src="Images/EPICSCar.png" alt="EPICS 4WD Arduino Car" />
+            <div class="layer">
+              <h3>EPICS 4WD Arduino Car</h3>
+              <p>
+                Designed and built a 4WD Arduino car with obstacle detection and
+                line-following sensors.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+          <div class="projects">
+            <img src="Images/Neon Sign.png" alt="Neon Sign" />
+            <div class="layer">
+              <h3>EPICS Neon Sign & LED Sign</h3>
+              <p>
+                Designed and built a custom LED neon sign for program
+                visibility.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+          <div class="projects">
+            <img src="Images/Linetracker.png" alt="Line Tracking Car" />
+            <div class="layer">
+              <h3>Line Tracking Car</h3>
+              <p>
+                Built an autonomous car that follows a track using IR sensors.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+          <div class="projects">
+            <img src="Images/HeartLED.png" alt="Heart LED Project" />
+            <div class="layer">
+              <h3>Heart LED Project</h3>
+              <p>
+                Created a heart-shaped LED display with custom pulse patterns.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+          <div class="projects">
+            <img src="Images/crochet.png" alt="Crochet Craft" />
+            <div class="layer">
+              <h3>Crochet Craft</h3>
+              <p>
+                Handmade crochet pieces that blend creativity with unique
+                patterns.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-container">
+          <!-- Left Contact Info -->
+          <div class="contact-left">
+            <p><i class="bx bx-envelope"></i>awojuyigbemodupe@gmail.com</p>
+            <p><i class="bx bx-phone"></i>(832)-597-0825</p>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/modupe-awojuyigbe-9937a7295/"
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
+              <a href="https://github.com/"><i class="bx bxl-github"></i></a>
+              <a href="mailto:modupe.awojuyigbe@my.utsa.edu"
+                ><i class="bx bx-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Right Contact Form -->
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn1">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Hamburger Menu Toggle
+      const menuIcon = document.querySelector(".hamburger i");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+      function opentab(tabName, event) {
+        // Remove active-link class from all tab links
+        let tabLinks = document.querySelectorAll(".tab-links");
+        tabLinks.forEach((link) => link.classList.remove("active-link"));
+
+        // Hide all tab contents
+        let tabInfos = document.querySelectorAll(".tab-info");
+        tabInfos.forEach((info) => info.classList.remove("active-tab"));
+
+        // Show the clicked tab content and highlight the tab link
+        document.getElementById(tabName).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");
+      }
+    </script>
+  </body>
+</html>
