@@ -41,9 +41,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li>
-              <a href="Modupe_updated_NSBEresume_2025 copy.pdf" target="_blank"
-                >Resume</a
-              >
+              <a href="Modupe_updateresume_2025.pdf" target="_blank">Resume</a>
             </li>
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -122,19 +120,18 @@
 
     <div class="tab-info active-tab" id="skills">
       <ul>
-        <li><span>Programming: </span>Python, C, MATLAB,HTML, CSS,</li>
-        <li><span>Self-taught Languages: </span>JavaScript, React, C++</li>
-        <li><span>Web Development:</span> Frontend development</li>
+        <li><span>Programming:</span>Python, C, MATLAB,HTML, CSS</li>
+        <li><span>Self-taught Languages:</span>JavaScript, React, C++</li>
+        <li><span>Web Development:</span>Frontend development</li>
         <li>
-          <span>Hardware & Circuits: </span> Digital circuits, Breadboarding,
+          <span>Hardware & Circuits:</span>Digital circuits, Breadboarding,
           Soldering
         </li>
-        <li><span>Microcontrollers: </span> TinkerCAD simulation, ICs</li>
-        <li><span>3D Printing & Fabrication: </span> Makerspace experience</li>
-        <li><span>Robotics: </span> Building and programming robot car</li>
+        <li><span>Microcontrollers:</span>TinkerCAD simulation, ICs</li>
+        <li><span>3D Printing & Fabrication:</span>Makerspace experience</li>
+        <li><span>Robotics:</span>Building and programming robot car</li>
         <li>
-          <span>Others: </span> Communication, Critical Thinking, Problem
-          solving
+          <span>Others:</span>Communication, Critical Thinking, Problem solving
         </li>
       </ul>
     </div>
@@ -142,20 +139,20 @@
     <div class="tab-info" id="experience">
       <ul>
         <li>
-          <span>August 2024 - Present: </span> Peer Educator at The University
-          of Texas at San Antonio
+          <span>August 2024 - Present:</span>Peer Educator at The University of
+          Texas at San Antonio
         </li>
         <li>
-          <span>May 2024 - August 2024: </span> Summer Resident Assistant at The
+          <span>May 2024 - August 2024:</span>Summer Resident Assistant at The
           University of Texas at San Antonio
         </li>
         <li>
-          <span>February 2024 - August 2024: </span> Codepath Web Development
+          <span>February 2024 - August 2024:</span>Codepath Web Development
           Program
         </li>
         <li>
-          <span>February 2023 - March 2023: </span> Associate Operations intern
-          at Carleton University
+          <span>February 2023 - March 2023:</span>Associate Operations intern at
+          Carleton University
         </li>
       </ul>
     </div>
@@ -163,29 +160,27 @@
     <div class="tab-info" id="involvement">
       <ul>
         <li>
-          <span>January 2025 - Present: </span> Volunteer at Makerspace at The
+          <span>January 2025 - Present:</span>Volunteer at Makerspace at The
           University of Texas at San Antonio
         </li>
-        <li><span>January 2025 - Present: </span> Member at UTSA EPICS Club</li>
-        <li><span>January 2025 - Present: </span> Member of Colorstacks</li>
+        <li><span>January 2025 - Present:</span>Member at UTSA EPICS Club</li>
+        <li><span>January 2025 - Present:</span>Member of Colorstacks</li>
         <li>
-          <span>September 2023 - Present: </span> Member of Society of Women
+          <span>September 2023 - Present:</span>Member of Society of Women
           Engineers
         </li>
         <li>
-          <span>September 2023 - Present: </span> Member of National Society of
+          <span>September 2023 - Present:</span>Member of National Society of
           Black Engineers
         </li>
         <li>
-          <span>September 2023 - Present: </span> Member of Institute of
+          <span>September 2023 - Present:</span>Member of Institute of
           Electrical and Electronics Engineers
         </li>
         <li>
-          <span>September 2023 - Present: </span> Member of Rewriting the Code
+          <span>September 2023 - Present:</span>Member of Rewriting the Code
         </li>
-        <li>
-          <span>September 2023 - Present: </span> Member of Girls Who Code
-        </li>
+        <li><span>September 2023 - Present:</span>Member of Girls Who Code</li>
       </ul>
     </div>
 
@@ -207,12 +202,12 @@
           </div>
 
           <div class="projects">
-            <img src="Images/Neon Sign.png" alt="Neon Sign" />
+            <img src="Images/Scholist.png" alt="Scholist App" />
             <div class="layer">
-              <h3>EPICS Neon Sign & LED Sign</h3>
+              <h3>Scholist App</h3>
               <p>
-                Designed and built a custom LED neon sign for program
-                visibility.
+                Designed and built a scholarship website during my internship
+                for Scholist.
               </p>
               <a href="#"><i class="bx bx-link-external"></i></a>
             </div>
@@ -303,12 +298,15 @@
 
     <script>
       // Hamburger Menu Toggle
-      const menuIcon = document.querySelector(".hamburger i");
-      const navLinks = document.querySelector(".nav-links");
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector("nav ul");
 
-      menuIcon.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
+        hamburger.addEventListener("click", function () {
+          navMenu.classList.toggle("show");
+        });
       });
+
       function opentab(tabName, event) {
         // Remove active-link class from all tab links
         let tabLinks = document.querySelectorAll(".tab-links");

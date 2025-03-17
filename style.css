@@ -26,47 +26,52 @@ body {
   z-index: 1000;
 }
 
+/* General Navbar Styles */
 .navbar {
   padding: 2px 2%;
 }
 
-#header nav h1,
-#header nav ul li a {
-  color: #fff; /* White text for contrast */
-}
-.sideimage {
-  width: 80px;
-}
-
-/* Flexbox Navigation */
-nav {
+#header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1px 0%;
   flex-wrap: wrap;
-}
-nav .sideimage {
-  width: 80px;
+  padding: 1px 0%;
+  position: relative;
 }
 
+/* Adjust the logo size dynamically */
+.sideimage {
+  width: 80px; /* Default size */
+  height: auto;
+}
+
+/* Larger screens - Adjustments */
+@media screen and (min-width: 1039px) {
+  .sideimage {
+    width: 80x; /* Smaller logo for large screens */
+  }
+}
+
+/* Navbar Links */
 nav ul {
   display: flex;
-  gap: 20px; /* Space between navbar items */
-  margin-left: auto; /* Push navbar items to the right */
+  gap: 30px;
+  margin-left: auto;
 }
 
 nav ul li {
   position: relative;
   margin: 10px 20px;
+  list-style: none;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
-  padding-bottom: 5px; /* Space for the underline */
+  padding-bottom: 5px;
 }
 
 nav ul li a::after {
@@ -84,41 +89,86 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+/* Mobile Navigation */
+.hamburger {
+  display: none; /* Hidden on large screens */
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+  .sideimage {
+    width: 70px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: rgb(62, 31, 46);
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 2px 0;
+  }
+
+  nav ul.show {
+    display: flex; /* Show navbar when toggled */
+  }
+
+  .hamburger {
+    display: block; /* Show menu icon on small screens */
+  }
+}
+
 /* Home Section */
 .home {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between text and image */
+  justify-content: flex-start; /* Align everything to the left */
+  flex-wrap: nowrap; /* Ensures side-by-side layout */
   min-height: 100vh;
-  padding-top: 70px;
+  padding-top: 120px;
   padding-left: 5%;
   padding-right: 5%;
+  gap: 20px;
 }
 
+/* Home Content */
 .home-content {
   max-width: 50%;
+  flex: 1;
 }
 
 .home-content h3 {
-  font-size: 45px;
+  font-size: 38px;
 }
 
 .home-content h1 {
-  font-size: 35px;
+  font-size: 32px;
   line-height: 1.2;
 }
 
 /* Profile Image */
 .profile {
-  max-width: 50%;
+  flex: 1;
   display: flex;
-  justify-content: flex-end; /* Align image to the right */
+  justify-content: flex-end; /* Ensure the image aligns left */
+  margin-left: 4;
 }
 
 .profile img {
   border-radius: 4%;
   width: 100%;
   max-width: 350px;
+  height: auto;
 }
 
 .text-animation span {
@@ -173,7 +223,7 @@ nav ul li a:hover::after {
 
 /* Social Media Icons */
 .social-icons {
-  display: flex;
+  justify-content: flex-start;
   gap: 20px; /* Space between icons */
   margin-top: 20px;
 }
@@ -189,6 +239,49 @@ nav ul li a:hover::after {
   transform: scale(1.3) translateY(-5px);
 }
 
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .home {
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  }
+
+  .home-content {
+    max-width: 55%;
+  }
+
+  .home-content h3 {
+    font-size: 30px;
+  }
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .profile {
+    max-width: 30%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content,
+  .profile {
+    max-width: 100%;
+  }
+
+  .profile img {
+    max-width: 200px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
 #about {
   padding: 100px 5%;
   text-align: center;
@@ -196,6 +289,7 @@ nav ul li a:hover::after {
   border-radius: 20px;
   max-width: 900px;
   margin: auto;
+  margin-top: 20px;
   margin-bottom: 100px; /* Adds space below the About section */
 }
 .about-header {
@@ -229,6 +323,7 @@ nav ul li a:hover::after {
   margin-top: 150px; /* Adds extra space above tab links */
 }
 
+/* Tab Links */
 .tab-links {
   font-size: 30px;
   font-weight: 600;
@@ -293,8 +388,12 @@ nav ul li a:hover::after {
   color: #ffb6c1;
   font-size: 28px;
   font-weight: 600;
+  margin-right: 15px; /* Adds space between label and information */
 }
 
+.tab-info ul li span + span {
+  margin-left: 10px; /* Adds space if there are multiple spans */
+}
 /* Smooth Fade In Animation */
 @keyframes fadeIn {
   from {
@@ -304,6 +403,56 @@ nav ul li a:hover::after {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  /* For smaller screens */
+  .tab-titles {
+    gap: 30px; /* Reduced gap between tabs */
+    margin-top: 100px; /* Adjusted top margin */
+  }
+
+  .tab-links {
+    font-size: 24px; /* Smaller font size for tab links */
+  }
+
+  .tab-info {
+    padding: 20px; /* Reduced padding for content */
+  }
+
+  .tab-info ul li {
+    font-size: 20px; /* Smaller font size for list items */
+  }
+
+  .tab-info ul li span {
+    font-size: 22px; /* Smaller font size for span text */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* For mobile screens */
+  .tab-titles {
+    gap: 30px; /* Reduced gap between tabs */
+    margin-top: 100px; /* Adjusted top margin */
+  }
+
+  .tab-links {
+    font-size: 20px; /* Even smaller font size for tab links */
+    padding: 8px 12px; /* Adjusted padding */
+  }
+
+  .tab-info {
+    padding: 15px; /* Further reduced padding for mobile */
+  }
+
+  .tab-info ul li {
+    font-size: 18px; /* Even smaller font size for list items */
+  }
+
+  .tab-info ul li span {
+    font-size: 20px; /* Smaller font size for span text */
   }
 }
 
@@ -516,5 +665,3 @@ nav ul li a:hover::after {
 .social-icons a:hover {
   color: white;
 }
-
-/*CSS for smaller screens*/
