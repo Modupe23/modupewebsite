@@ -5,7 +5,7 @@ const experiences = [
     team: 'AUTOMATION & AUTONOMY ENGINEERING',
     date: 'May 2026 to Aug 2026',
     points: [
-      'Developed a proof of concept for coordinating multiple autonomous soil compactors operating within the same work zone.',
+      'Developed a proof of concept for coordinating multiple autonomous machines.',
       'Built a Python simulation to explore machine coordination, operating scenarios, and system behavior.',
       'Supported field testing, software flashing, machine data validation, and troubleshooting of autonomous equipment.'
     ],
