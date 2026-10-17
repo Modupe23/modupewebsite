@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modupe's Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="Image/png" href="Images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Laptop Preloader -->
+    <div id="laptop-preloader">
+      <div class="laptop">
+        <div class="laptop-lid">
+          <div class="laptop-screen">
+            <h1>WELCOME</h1>
+          </div>
+        </div>
+        <div class="laptop-base"></div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div id="header">
+      <div class="navbar">
+        <nav>
+          <img src="Images/logo.png" class="sideimage" alt="Modupe Logo" />
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+              <a href="Modupe Awojuyigbe Resume.pdf" target="_blank">Resume</a>
+            </li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <i class="bx bx-menu"></i>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <div class="home-content">
+        <h3>Hello!</h3>
+        <h1>I'm Modupe 🙋🏾‍♀️</h1>
+        <h1 class="text-animation">
+          <span>a Computer Engineering student</span>
+        </h1>
+        <h1>at The University of Texas at San Antonio.</h1>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/modupe-awojuyigbe/" target="_blank"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://github.com/Modupe23" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="mailto:awojuyigbemodupe@gmail.com"
+            ><i class="bx bx-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="Images/profilepic.png" alt="Modupe Awojuyigbe" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="hidden">
+      <div class="about-header">About Me</div>
+      <div class="about-content">
+        <p>
+          I am a <span>Computer Engineering student</span> with a passion for building scalable tools using <span>Python, C/C++, and AI</span>. I thrive at the intersection of software, automation, and system optimization to create real-world impact.
+        </p>
+        <p>
+          Currently, I work as a <span>Teaching Assistant</span> mentoring students in programming, while actively building hands-on projects like <span>robotic systems, digital circuits, and responsive full-stack applications.</span>
+        </p>
+        <p>
+          My industry experience includes an internship at <span>EDP Renewables North America</span>, where I engineered Python automation tools that significantly reduced project setup delays, and a role as a <span>Full Stack Developer Intern</span>, where I built a high-performance RAG recommendation system using Google Vertex AI.
+        </p>
+        <p>
+          Beyond engineering, I serve as a <span>Senator for the National Society of Black Engineers (NSBE)</span>, advocating for student needs and actively promoting opportunities for <span>people in STEM</span>.
+        </p>
+      </div>
+    </section>
+
+      <!-- Tab Titles Section -->
+      <div class="tab-titles hidden">
+        <p class="tab-links active-link" onclick="opentab('skills', event)">
+          Skills
+        </p>
+        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+        <p class="tab-links" onclick="opentab('involvement', event)">
+          Involvement & Education
+        </p>
+      </div>
+
+      <div class="tab-info active-tab" id="skills">
+        <ul>
+          <li>
+            <span>Languages & Frameworks</span> Python, C++, C, JavaScript (Node.js, Express.js), PyTorch, VS Code, MATLAB, Linux
+          </li>
+          <li>
+            <span>Machine Learning & AI</span> PyTorch, Machine Learning, Generative AI/LLMs, Google Cloud (Vertex AI, Gemini)
+          </li>
+          <li>
+            <span>Systems, Hardware & Tools</span> Microsoft Office Tools, SCADA Systems, Embedded Systems, 3D Printing, Agile Methodology, Git, Circuit Analysis, Root Cause Analysis
+          </li>
+          <li>
+            <span>Professional Strengths</span> Cross-Functional Collaboration, Adaptability, Problem Solving, Attention to Detail
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-info" id="experience">
+        <ul>
+          <li>
+            <span>Operations Engineering Intern</span> EDP Renewables North America (June 2025 - August 2025)
+          </li>
+          <li>
+            <span>Teaching Assistant / Peer Educator</span> The University of Texas at San Antonio (August 2024 - Present)
+          </li>
+          <li>
+            <span>Full Stack Developer Intern</span> Scholist App (May 2024 - August 2024)
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-info" id="involvement">
+        <ul>
+          <li>
+            <span>Education</span> B.S. in Computer Engineering, The University of Texas at San Antonio (Expected May 2027)
+          </li>
+          <li>
+            <span>Coursework</span> Digital System Design, Computer Architecture, C++ and Data Structures, Micro Computer Systems
+          </li>
+          <li>
+            <span>Senator</span> National Society of Black Engineers (NSBE) (May 2025 - Present)
+          </li>
+          <li>
+            <span>Achievements</span> President’s List, Dean’s List, Women in Toys Scholar, Klesse College Scholar, NSBE Scholar, USAA Scholar
+          </li>
+          <li>
+            <span>Organizations</span> National Society of Black Engineers (NSBE), herScript, Society of Women Engineers (SWE), Rewriting the Code, Colorstacks, Girls Who Code, Codepath
+          </li>
+        </ul>
+      </div>
+
+    <!-- Projects Section -->
+    <section id="portfolio" class="hidden">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-grid">
+          <!-- NEW PROJECTS -->
+          <div class="projects">
+            <img src="Images/roboticarm.png" alt="Robotic Arm Project" />
+            <div class="layer">
+              <h3>Robotic Arm Project</h3>
+              <p>
+                Programmed an Arduino-based robotic arm in C++ with ultrasonic sensors and 3D Printed parts, implementing PID logic to detect objects and improve pickup accuracy by 60%.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Modupe23?tab=repositories" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="#" aria-label="External Link"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects">
+            <img src="Images/pic.png" alt="Real-Time Voice Captioning" />
+            <div class="layer">
+              <h3>Real-Time Voice Captioning</h3>
+              <p>
+                Built a real-time system using a PIC microcontroller and Python to convert speech into text, developing a pipeline using Cloud Translation API and Gemini for multilingual translation.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Modupe23?tab=repositories" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="#" aria-label="External Link"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects">
+            <img src="Images/trackingvehicle.png" alt="Autonomous Tracking Vehicle" />
+            <div class="layer">
+              <h3>Autonomous Tracking Vehicle</h3>
+              <p>
+                Engineered a fully autonomous mini vehicle utilizing infrared sensors and C++ programming to enable precise path detection with responsive navigation.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Modupe23?tab=repositories" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="#" aria-label="External Link"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- OLD PROJECTS -->
+          <div class="projects">
+            <img src="Images/EPICSCar.png" alt="EPICS 4WD Arduino Car" />
+            <div class="layer">
+              <h3>EPICS 4WD Arduino Car</h3>
+              <p>
+                Designed and built a 4WD Arduino car with obstacle detection and line-following sensors.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Modupe23?tab=repositories" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="#" aria-label="External Link"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects">
+            <img src="Images/Neon Sign.png" alt="Neon Sign" />
+            <div class="layer">
+              <h3>EPICS Neon Sign & LED Sign</h3>
+              <p>
+                Designed and built a custom LED neon sign for program visibility.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Modupe23?tab=repositories" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="#" aria-label="External Link"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects">
+            <img src="Images/Linetracker.png" alt="Line Tracking Car" />
+            <div class="layer">
+              <h3>Line Tracking Car</h3>
+              <p>
+                Built an autonomous car that follows a track using IR sensors.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Modupe23?tab=repositories" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="#" aria-label="External Link"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects">
+            <img src="Images/HeartLED.png" alt="Heart LED Project" />
+            <div class="layer">
+              <h3>Heart LED Project</h3>
+              <p>
+                Created a heart-shaped LED display with custom pulse patterns.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Modupe23?tab=repositories" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="#" aria-label="External Link"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects">
+            <img src="Images/crochet.png" alt="Crochet Craft" />
+            <div class="layer">
+              <h3>Crochet Craft</h3>
+              <p>
+                Handmade crochet pieces that blend creativity with unique patterns.
+              </p>
+              <div class="project-links">
+                <a href="#" aria-label="External Link"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="hidden">
+      <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-container">
+          <!-- Left Contact Info -->
+          <div class="contact-left">
+            <p><i class="bx bx-envelope"></i>awojuyigbemodupe@gmail.com</p>
+            <p><i class="bx bx-phone"></i>(832)-597-0825</p>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/modupe-awojuyigbe/" target="_blank"
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
+              <a href="https://github.com/Modupe23" target="_blank"><i class="bx bxl-github"></i></a>
+              <a href="mailto:awojuyigbemodupe@gmail.com"
+                ><i class="bx bx-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Right Contact Form -->
+          <div class="contact-right">
+            <!-- FormSubmit Service to forward emails seamlessly -->
+            <form id="contact-form" action="https://formsubmit.co/awojuyigbemodupe@gmail.com" method="POST">
+              <!-- Honeypot -->
+              <input type="text" name="_honey" style="display:none">
+              <!-- Disable Captcha -->
+              <input type="hidden" name="_captcha" value="false">
+              <!-- Success Redirect (Optional, can be removed to use default) -->
+              <input type="hidden" name="_next" value="https://github.com/Modupe23">
+              
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button id="submit-btn" type="submit" class="btn btn1">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Designed & Built by Modupe Awojuyigbe &copy; 2026</p>
+    </footer>
+
+    <script>
+      // Laptop Preloader Logic
+      window.addEventListener('load', () => {
+        document.body.style.overflow = 'hidden'; // Prevent scrolling during animation
+        setTimeout(() => {
+          const preloader = document.getElementById('laptop-preloader');
+          if (preloader) {
+            preloader.style.opacity = '0';
+            setTimeout(() => {
+              preloader.style.display = 'none';
+              document.body.style.overflow = 'auto'; // Restore scrolling
+            }, 500); 
+          }
+        }, 3200); 
+      });
+
+      // Hamburger Menu Toggle
+      const menuIcon = document.querySelector(".hamburger");
+      const navLinks = document.querySelector("nav ul");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+
+      // Tabs Logic
+      function opentab(tabName, event) {
+        // Remove active-link class from all tab links
+        let tabLinks = document.querySelectorAll(".tab-links");
+        tabLinks.forEach((link) => link.classList.remove("active-link"));
+
+        // Hide all tab contents
+        let tabInfos = document.querySelectorAll(".tab-info");
+        tabInfos.forEach((info) => info.classList.remove("active-tab"));
+
+        // Show the clicked tab content and highlight the tab link
+        document.getElementById(tabName).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");
+      }
+
+      // Contact Form Loading State
+      const contactForm = document.getElementById('contact-form');
+      const submitBtn = document.getElementById('submit-btn');
+
+      if (contactForm && submitBtn) {
+        contactForm.addEventListener('submit', function() {
+          submitBtn.innerHTML = 'Sending... <i class="bx bx-loader-alt bx-spin"></i>';
+          submitBtn.style.opacity = '0.7';
+          submitBtn.style.cursor = 'not-allowed';
+        });
+      }
+    </script>
+  </body>
+</html>
